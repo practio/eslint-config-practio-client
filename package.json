@@ -1,0 +1,48 @@
+{
+  "name": "eslint-config-practio-client",
+  "version": "1.0.0",
+  "description": "Global eslint config for all Practio React.js clients",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/practio/eslint-config-practio-client.git"
+  },
+  "author": "Practio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/practio/eslint-config-practio-client/issues"
+  },
+  "homepage": "https://github.com/practio/eslint-config-practio-client#readme",
+  "scripts": {
+    "test": "mocha",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags",
+    "format": "prettier --loglevel warn --write \"**/*.@(js|ts|mjs|json|css|scss|less|html|htm|md|yml|yaml)\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.@(js|ts|mjs|json|css|scss|less|html|htm|md|yml|yaml)": [
+      "prettier --loglevel warn --write",
+      "git add"
+    ]
+  },
+  "prettier": "@practio/prettier-config",
+  "dependencies": {
+    "@practio/eslint-config-practio": "^7.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-react-hooks": "^2.3.0"
+  },
+  "devDependencies": {
+    "@practio/prettier-config": "^4.0.0",
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.4",
+    "mocha": "^7.0.1",
+    "mocha-eslint": "^6.0.0",
+    "prettier": "^1.19.1"
+  }
+}
