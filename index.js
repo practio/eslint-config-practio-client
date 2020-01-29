@@ -9,6 +9,8 @@ module.exports = {
     'react/no-children-prop': 'off',
     'template-curly-spacing': 'off',
     'react/self-closing-comp': ['error', { component: true, html: true }],
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
   },
   settings: {
     react: {
