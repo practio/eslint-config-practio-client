@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-practio-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Global eslint config for all Practio React.js clients",
   "main": "index.js",
   "repository": {
@@ -26,23 +26,22 @@
   },
   "lint-staged": {
     "*.@(js|ts|mjs|json|css|scss|less|html|htm|md|yml|yaml)": [
-      "prettier --loglevel warn --write",
-      "git add"
+      "prettier --loglevel warn --write"
     ]
   },
   "prettier": "@practio/prettier-config",
   "dependencies": {
-    "@practio/eslint-config-practio": "^7.0.0",
-    "babel-eslint": "^10.0.3",
-    "eslint-plugin-react": "^7.18.0",
-    "eslint-plugin-react-hooks": "^2.3.0"
+    "@practio/eslint-config-practio": "^7.0.1",
+    "babel-eslint": "^10.1.0",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.1"
   },
   "devDependencies": {
     "@practio/prettier-config": "^4.0.0",
-    "husky": "^4.2.1",
-    "lint-staged": "^10.0.4",
-    "mocha": "^7.0.1",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "mocha": "^7.1.1",
     "mocha-eslint": "^6.0.0",
-    "prettier": "^1.19.1"
+    "prettier": "^2.0.1"
   }
 }
