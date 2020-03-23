@@ -1,1 +1,1 @@
-require('mocha-eslint')(['.']);
+require('mocha-eslint')(['.', '!node_modules'], { timeout: 5000 });
