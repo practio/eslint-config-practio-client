@@ -1,5 +1,5 @@
 module.exports = {
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   extends: ['@practio/practio', 'plugin:react/recommended'],
   plugins: ['react-hooks'],
   rules: {
