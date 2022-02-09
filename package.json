@@ -32,17 +32,17 @@
   },
   "prettier": "@practio/prettier-config",
   "dependencies": {
-    "@practio/eslint-config-practio": "^7.0.1",
-    "babel-eslint": "^10.1.0",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^2.5.1"
+    "@babel/eslint-parser": "^7.17.0",
+    "@practio/eslint-config-practio": "^10.1.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0"
   },
   "devDependencies": {
     "@practio/prettier-config": "^5.0.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.3",
     "mocha": "^7.1.1",
-    "mocha-eslint": "^6.0.0",
+    "mocha-eslint": "^7.0.0",
     "prettier": "^2.5.1"
   }
 }
